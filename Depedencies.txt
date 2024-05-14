@@ -1,0 +1,8 @@
+pip install flask
+pip install opencv-python
+pip install cmake
+pip install dlib
+pip install face_recognition
+
+
+python main.py

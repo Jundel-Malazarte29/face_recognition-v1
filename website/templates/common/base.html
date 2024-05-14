@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    {% block link %}{% endblock %}
+    
+    <title>{% block title %}Base{% endblock %}</title>
+</head>
+<body>
+    {% block header %}{% endblock %}
+    <div class="container">
+      {% block content %}{% endblock %}
+    </div>
+    
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='index.js' )}}"
+    ></script>
+    {% block scripts %}{% endblock %}
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/ruang-admin.min.js"></script>
+</body>
+</html>
